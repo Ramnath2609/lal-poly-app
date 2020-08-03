@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createGlobalStyle } from "styled-components";
+import Appbar from "./components/Appbar";
+import SideBar from "./components/SideBar";
+
+const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+  
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+  }
+`;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyles />
+      <Appbar />
+      <SideBar />
     </div>
   );
 }
