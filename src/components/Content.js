@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   margin-left: 190px;
   margin-top: 10%;
 `;

@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { Link, BrowserRouter, Route } from "react-router-dom";
 import Icon from "../icons/down-arrow.png";
 import Content from "./Content";
+import ContactUs from "../components/ContactUs";
+import LogoTitle from "../icons/Title Logo.png";
+import LogoBook from "../icons/Book Logo.png";
+import Home from "./Home";
 
 const NavBar = styled.div`
   display: flex;
@@ -19,14 +23,12 @@ const DownIcon = styled.img`
   padding-left: 2px;
 `;
 
-const Title = styled.h2`
-  margin: 10px;
-  color: white;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-shadow: 0px 0px 3px;
-  text-transform: uppercase;
-  font-size: 30px;
+const Title = styled.div`
+  width: 35%;
+  /* height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const TitleBar = styled.div`
@@ -111,6 +113,13 @@ const DropDown = styled.div`
   }
 `;
 
+const ImageHolder = styled.div`
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const NavLinks = styled.div`
   display: flex;
   flex-direction: row;
@@ -124,7 +133,12 @@ const Appbar = () => {
     <BrowserRouter>
       <NavBar>
         <TitleBar>
-          <Title>Lal Poly Bureau Publishing Ltd</Title>
+          <ImageHolder>
+            <img src={LogoBook} alt="logo" style={{ width: "100%" }} />
+          </ImageHolder>
+          <Title>
+            <img src={LogoTitle} alt="logo" style={{ width: "100%" }} />
+          </Title>
         </TitleBar>
         <NavLinks>
           <StyledLink to="/">Home</StyledLink>
@@ -149,13 +163,24 @@ const Appbar = () => {
               <DropDownLink>Studies on issues</DropDownLink>
             </DropDownContent>
           </DropDown>
+          <DropDown>
+            <DropDownButton>
+              Article
+              <DownIcon src={Icon} />
+            </DropDownButton>
+            <DropDownContent>
+              <DropDownLink>Emotional</DropDownLink>
+              <DropDownLink>Intelligence</DropDownLink>
+            </DropDownContent>
+          </DropDown>
           <StyledLink to="/book-reviews">Book Reviews</StyledLink>
           <StyledLink to="/writers-corner">Writer's Corner</StyledLink>
           <StyledLink to="/contact-us">Contact Us</StyledLink>
         </NavLinks>
       </NavBar>
 
-      <Route path="/" component={Content} />
+      <Route exact path="/" component={Home} />
+      <Route path="/contact-us" component={ContactUs} />
     </BrowserRouter>
   );
 };

@@ -11,13 +11,4 @@ function App() {
   );
 }
 
-// const GlobalStyles = createGlobalStyle`
-//   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
-//   body {
-//     font-family: 'Roboto', sans-serif;
-//     margin: 0px;
-//   }
-// `;
-
 export default App;
