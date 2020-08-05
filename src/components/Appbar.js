@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link, BrowserRouter, Route } from "react-router-dom";
 import Icon from "../icons/down-arrow.png";
-import Content from "./Content";
 import ContactUs from "../components/ContactUs";
 import LogoTitle from "../icons/Title Logo.png";
 import LogoBook from "../icons/Book Logo.png";
