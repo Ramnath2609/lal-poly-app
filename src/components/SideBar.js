@@ -30,13 +30,21 @@ const LinkHolder = styled.div`
 
   &:hover {
     background-color: #ddd;
+
+    .lal-StyledLink {
+      color: #0077D9;
+    }
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link).attrs({
+  className: String('lal-StyledLink')
+})`
   text-decoration: none;
   color: black;
   padding: 10px;
+  font-family: RobotoBold;
+  font-size: 18px;
 `;
 
 const SideBar = () => {
