@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   margin-left: 190px;
   margin-top: 10%;
+  font-family: RobotoMedium;
+  font-size: 18px;
 `;
 
 const Content = () => {
