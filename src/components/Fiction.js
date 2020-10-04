@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Final from "../icons/Fiction/Final 1.jpg";
 import fINAL from "../icons/Fiction/fINAL.jpg";
-import Ghost from "../icons/Fiction/Ghost.jpg";
 
 const Wrapper = styled.div.attrs({
     className: String('lal-FictionWrapper')
@@ -10,6 +9,7 @@ const Wrapper = styled.div.attrs({
   margin-left: 190px;
   margin-top: 12%;
   display: flex;
+  justify-content: space-evenly;
 `;
 
 const Anchor = styled.a.attrs({
@@ -29,21 +29,18 @@ const Anchor = styled.a.attrs({
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    width: 400px;
 `;
 
 const Fiction = () => {
     return (
         <Wrapper>
-            <Anchor href="https://lalopoly.s3.amazonaws.com/Death+and+Ressurection+AMAZON+NOVEL+3.pdf" target="_blank" rel="Death and Ressurection">
+            <Anchor href="https://lalopoly.s3.amazonaws.com/Death+and+Ressurection+AMAZON+NOVEL+3.pdf" target="_blank" rel="Death and Ressurection" title="Death and Ressurection of Lazar">
                 <img src={Final} alt="logo" style={{ width: "65%" }} />
             </Anchor>
 
-            <Anchor href="https://lalopoly.s3.amazonaws.com/Final+Solution+AMAZON+NOVEL+1.pdf" target="_blank" rel="Final Solution">
+            <Anchor href="https://lalopoly.s3.amazonaws.com/Final+Solution+AMAZON+NOVEL+1.pdf" target="_blank" rel="Final Solution" title="Final Solution">
                 <img src={fINAL} alt="logo" style={{ width: "65%" }} />
-            </Anchor>
-
-            <Anchor href="https://lalopoly.s3.amazonaws.com/Ghost+of+Vijayalakshmi.pdf" target="_blank" rel="Ghost of Vijayalakshmi">
-                <img src={Ghost} alt="logo" style={{ width: "65%" }} />
             </Anchor>
         </Wrapper>
     );

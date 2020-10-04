@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link, BrowserRouter, Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import Icon from "../icons/down-arrow.png";
 import ContactUs from "../components/ContactUs";
 import LogoTitle from "../icons/Title Logo.png";
@@ -12,7 +12,7 @@ import WriterCorner from "../components/WriterCorner";
 
 const NavBar = styled.div`
   display: flex;
-  position: fixed;
+  position: fixed; 
   top: 0;
   width: 100%;
   flex-direction: column;
@@ -75,6 +75,8 @@ const StyledLink = styled(Link)`
 
   &:hover {
     transform: translateY(-5px);
+    background: rgba(0,0,0,0) linear-gradient(to right,#00c9fd 0%,#81ee8e 100%) repeat scroll 0 0;    
+    transition: all 0.3s ease 0s;
 
     ::before {
       width: 100%;
@@ -136,6 +138,8 @@ const DropDown = styled.div`
 
   &:hover ${DropDownButton} {
     transform: translateY(-5px);
+    background: rgba(0,0,0,0) linear-gradient(to right,#00c9fd 0%,#81ee8e 100%) repeat scroll 0 0;    
+    transition: all 0.3s ease 0s;
   }
 `;
 
@@ -156,7 +160,7 @@ const NavLinks = styled.div`
 
 const Appbar = () => {
   return (
-    <BrowserRouter>
+    <>
       <NavBar>
         <TitleBar>
           <ImageHolder>
@@ -176,8 +180,9 @@ const Appbar = () => {
               <DownIcon src={Icon} />
             </DropDownButton>
             <DropDownContent>
-               <Anchor href="https://lalopoly.s3.amazonaws.com/Crucifixtion+of+darling.pdf" target="_blank" rel="Crucifixtion of darling">Crucifixion of darling</Anchor>
-               <Anchor href="https://lalopoly.s3.amazonaws.com/The+Visitor+to+Alanchy.pdf" target="_blank" rel="The Visitor to Alanchy">The Visitor to Alanchy</Anchor>
+              <Anchor href="https://lalopoly.s3.amazonaws.com/Crucifixtion+of+darling.pdf" target="_blank" rel="Crucifixtion of darling">Crucifixion of Dingu</Anchor>
+              <Anchor href="https://lalopoly.s3.amazonaws.com/The+Visitor+to+Alanchy.pdf" target="_blank" rel="The Visitor to Alanchy">The Visitor to Alanchy</Anchor>
+              <Anchor href="https://lalopoly.s3.amazonaws.com/Ghost+of+Vijayalakshmi.pdf" target="_blank" rel="Ghost of Vijayalakshmi">Ghost of Vijayalakshmi</Anchor>
             </DropDownContent>
           </DropDown>
 
@@ -187,7 +192,7 @@ const Appbar = () => {
               <DownIcon src={Icon} />
             </DropDownButton>
             <DropDownContent>
-              <DropDownLink  to="/fiction">Novels</DropDownLink>
+              <DropDownLink to="/fiction">Novels</DropDownLink>
             </DropDownContent>
           </DropDown>
 
@@ -208,7 +213,7 @@ const Appbar = () => {
               <DownIcon src={Icon} />
             </DropDownButton>
             <DropDownContentArticle>
-                <Anchor href="https://lalopoly.s3.amazonaws.com/EI+document.pdf" target="_blank" rel="EIDocument">Emotional Intelligence</Anchor>
+              <Anchor href="https://lalopoly.s3.amazonaws.com/EI+document.pdf" target="_blank" rel="EIDocument">Emotional Intelligence</Anchor>
             </DropDownContentArticle>
           </DropDown>
 
@@ -223,7 +228,7 @@ const Appbar = () => {
       <Route path="/fiction" component={Fiction} />
       <Route path="/book-reviews" component={BookReviews} />
       <Route path="/writers-corner" component={WriterCorner} />
-    </BrowserRouter>
+    </>
   );
 };
 
