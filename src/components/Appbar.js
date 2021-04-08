@@ -35,7 +35,7 @@ const Title = styled.div`
 const TitleBar = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   align-content: center;
   margin-left: 20px;
 `;
