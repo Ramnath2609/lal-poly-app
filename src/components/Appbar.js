@@ -17,6 +17,7 @@ const NavBar = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   background-color: #182c61;
+  z-index: 1
 `;
 
 const DownIcon = styled.img`

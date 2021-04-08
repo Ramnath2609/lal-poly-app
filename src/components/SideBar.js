@@ -17,7 +17,7 @@ const SideNavbar = styled.div`
   height: 100vh;
   position: fixed;
   box-shadow: -1px 0px 4px;
-  top: 138px;
+  top: 150px;
   left: 0;
   z-index: 0;
   background-color: #f1f1f1;
