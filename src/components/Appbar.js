@@ -4,7 +4,6 @@ import { Link, Route } from "react-router-dom";
 import Icon from "../icons/down-arrow.png";
 import ContactUs from "../components/ContactUs";
 import LogoTitle from "../icons/Title Logo.png";
-import LogoBook from "../icons/Book Logo.png";
 import Home from "./Home";
 import Fiction from "../components/Fiction";
 import BookReviews from "../components/BookReviews";
@@ -36,8 +35,9 @@ const Title = styled.div`
 const TitleBar = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-content: center;
+  margin-left: 20px;
 `;
 
 const Anchor = styled.a`
@@ -143,13 +143,6 @@ const DropDown = styled.div`
   }
 `;
 
-const ImageHolder = styled.div`
-  width: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const NavLinks = styled.div`
   display: flex;
   flex-direction: row;
@@ -163,9 +156,6 @@ const Appbar = () => {
     <>
       <NavBar>
         <TitleBar>
-          <ImageHolder>
-            <img src={LogoBook} alt="logo" style={{ width: "100%" }} />
-          </ImageHolder>
           <Title>
             <img src={LogoTitle} alt="logo" style={{ width: "100%" }} />
           </Title>
