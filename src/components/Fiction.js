@@ -35,11 +35,11 @@ const Anchor = styled.a.attrs({
 const Fiction = () => {
     return (
         <Wrapper>
-            <Anchor href="https://lalopoly.s3.amazonaws.com/Death+and+Ressurection+AMAZON+NOVEL+3.pdf" target="_blank" rel="Death and Ressurection" title="Death and Ressurection of Lazar">
+            <Anchor href="https://lal-poly.s3.amazonaws.com/Death+and+Ressurection++AMAZON+NOVEL+3+-+Copy.pdf" target="_blank" rel="Death and Ressurection" title="Death and Ressurection of Lazar">
                 <img src={Final} alt="logo" style={{ width: "65%" }} />
             </Anchor>
 
-            <Anchor href="https://lalopoly.s3.amazonaws.com/Final+Solution+AMAZON+NOVEL+1.pdf" target="_blank" rel="Final Solution" title="Final Solution">
+            <Anchor href="https://lal-poly.s3.amazonaws.com/Final+Solution+AMAZON+NOVEL+1.pdf" target="_blank" rel="Final Solution" title="Final Solution">
                 <img src={fINAL} alt="logo" style={{ width: "65%" }} />
             </Anchor>
         </Wrapper>

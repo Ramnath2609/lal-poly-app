@@ -171,9 +171,9 @@ const Appbar = () => {
               <DownIcon src={Icon} />
             </DropDownButton>
             <DropDownContent>
-              <Anchor href="https://lalopoly.s3.amazonaws.com/Crucifixtion+of+darling.pdf" target="_blank" rel="Crucifixtion of darling">Crucifixion of Dingu</Anchor>
-              <Anchor href="https://lalopoly.s3.amazonaws.com/The+Visitor+to+Alanchy.pdf" target="_blank" rel="The Visitor to Alanchy">The Visitor to Alanchy</Anchor>
-              <Anchor href="https://lalopoly.s3.amazonaws.com/Ghost+of+Vijayalakshmi.pdf" target="_blank" rel="Ghost of Vijayalakshmi">Ghost of Vijayalakshmi</Anchor>
+              <Anchor href="https://lal-poly.s3.amazonaws.com/Crucifixtion+of++darling.pdf" target="_blank" rel="Crucifixtion of darling">Crucifixion of Dingu</Anchor>
+              <Anchor href="https://lal-poly.s3.amazonaws.com/The+Visitor+to+Alanchy.pdf" target="_blank" rel="The Visitor to Alanchy">The Visitor to Alanchy</Anchor>
+              <Anchor href="https://lal-poly.s3.amazonaws.com/Ghost+of+Vijayalakshmi.pdf" target="_blank" rel="Ghost of Vijayalakshmi">Ghost of Vijayalakshmi</Anchor>
             </DropDownContent>
           </DropDown>
 
@@ -204,7 +204,7 @@ const Appbar = () => {
               <DownIcon src={Icon} />
             </DropDownButton>
             <DropDownContentArticle>
-              <Anchor href="https://lalopoly.s3.amazonaws.com/EI+document.pdf" target="_blank" rel="EIDocument">Emotional Intelligence</Anchor>
+              <Anchor href="https://lal-poly.s3.amazonaws.com/EI+document.pdf" target="_blank" rel="EIDocument">Emotional Intelligence</Anchor>
             </DropDownContentArticle>
           </DropDown>
 
