@@ -5,6 +5,7 @@ import { Wrapper } from "../components/Content";
 const HomeContent = styled.div`
   width: 95%;
   margin: auto;
+  grid-area: content;
 `;
 
 const Home = () => {

@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-const Wrapper = styled.div`
-  margin-left: 190px;
-  margin-top: 10%;
-  font-family: RobotoMedium;
-  font-size: 18px;
-`;
+import { Wrapper } from "./styles";
 
 const HomeContent = styled.div`
   width: 95%;

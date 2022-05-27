@@ -9,15 +9,15 @@ import Fiction from "../components/Fiction";
 import BookReviews from "../components/BookReviews";
 import WriterCorner from "../components/WriterCorner";
 
-const NavBar = styled.div`
+const NavBar = styled.div.attrs({
+  className: 'header',
+  })`
   display: flex;
-  position: fixed; 
-  top: 0;
   width: 100%;
+  grid-area: header;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #182c61;
-  z-index: 1
 `;
 
 const DownIcon = styled.img`

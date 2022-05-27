@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  margin-left: 190px;
-  margin-top: 10%;
+export const Wrapper = styled.div.attrs({
+  className: 'content',
+  })`
   font-family: RobotoMedium;
   font-size: 18px;
+  grid-area: content;
 `;
 
 const Content = () => {
