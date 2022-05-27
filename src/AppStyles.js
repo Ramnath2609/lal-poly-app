@@ -4,11 +4,11 @@ export const GridLayout = styled.div`
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: 15% 1fr 1fr 1fr;
+    grid-template-columns: 15% 1fr;
     grid-template-rows: 180px calc(100% - 180px);
     grid-template-areas:
-      'header header header header'
-      'sidenav content content content'
+      'header header'
+      'sidenav content'
 `;
 
 export const AppLayout = styled.div`
