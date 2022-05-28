@@ -11,15 +11,12 @@ import FifthEvolution from "../components/evolution-god/FifthEvolution";
 import SixthEvolution from "../components/evolution-god/SixthEvolution";
 import SeventhEvolution from "../components/evolution-god/SeventhEvolution";
 
-const SideNavbar = styled.div`
-  width: 170px;
-  min-width: 110px;
-  height: 100vh;
-  position: fixed;
+const SideNavbar = styled.div.attrs({
+  className: 'sidenav',
+  })`
+  height: 100%;
+  grid-area: sidenav;
   box-shadow: -1px 0px 4px;
-  top: 150px;
-  left: 0;
-  z-index: 0;
   background-color: #f1f1f1;
 `;
 
@@ -78,7 +75,7 @@ const DropDownContent = styled.div`
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   transition: 0.3s ease;
-  margin-left: 171px;
+  margin-left: 200px;
   top: 0px;
 `;
 

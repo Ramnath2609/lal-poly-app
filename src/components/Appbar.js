@@ -7,17 +7,18 @@ import LogoTitle from "../icons/Title Logo.png";
 import Home from "./Home";
 import Fiction from "../components/Fiction";
 import BookReviews from "../components/BookReviews";
+import { Biographies } from "./Biographies";
 import WriterCorner from "../components/WriterCorner";
 
-const NavBar = styled.div`
+const NavBar = styled.div.attrs({
+  className: 'header',
+  })`
   display: flex;
-  position: fixed; 
-  top: 0;
   width: 100%;
+  grid-area: header;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #182c61;
-  z-index: 1
 `;
 
 const DownIcon = styled.img`
@@ -174,6 +175,10 @@ const Appbar = () => {
               <Anchor href="https://lal-poly.s3.amazonaws.com/Crucifixtion+of++darling.pdf" target="_blank" rel="Crucifixtion of darling">Crucifixion of Dingu</Anchor>
               <Anchor href="https://lal-poly.s3.amazonaws.com/The+Visitor+to+Alanchy.pdf" target="_blank" rel="The Visitor to Alanchy">The Visitor to Alanchy</Anchor>
               <Anchor href="https://lal-poly.s3.amazonaws.com/Ghost+of+Vijayalakshmi.pdf" target="_blank" rel="Ghost of Vijayalakshmi">Ghost of Vijayalakshmi</Anchor>
+              <Anchor href="https://lal-poly.s3.amazonaws.com/Love+of+two+farmers.docx" target="_blank" rel="Love of two farmers">Love of two farmers</Anchor>
+              <Anchor href="https://lal-poly.s3.amazonaws.com/Judas.docx" target="_blank" rel="Judas">Judas</Anchor>
+              <Anchor href="https://lal-poly.s3.amazonaws.com/Why+Jesus+was+born.docx" target="_blank" rel="Why Jesus was born?">Why Jesus was born?</Anchor>
+              <Anchor href="https://lal-poly.s3.amazonaws.com/The+Funeral.docx" target="_blank" rel="The Funeral">The Funeral</Anchor>
             </DropDownContent>
           </DropDown>
 
@@ -193,7 +198,7 @@ const Appbar = () => {
               <DownIcon src={Icon} />
             </DropDownButton>
             <DropDownContent>
-              <DropDownLink>Biographies</DropDownLink>
+              <DropDownLink to="/biographies">Biographies</DropDownLink>
               <DropDownLink>Studies on issues</DropDownLink>
             </DropDownContent>
           </DropDown>
@@ -217,6 +222,7 @@ const Appbar = () => {
       <Route exact path="/" component={Home} />
       <Route path="/contact-us" component={ContactUs} />
       <Route path="/fiction" component={Fiction} />
+      <Route path="/biographies" component={Biographies} />
       <Route path="/book-reviews" component={BookReviews} />
       <Route path="/writers-corner" component={WriterCorner} />
     </>

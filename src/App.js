@@ -2,14 +2,18 @@ import React from "react";
 import Appbar from "./components/Appbar";
 import SideBar from "./components/SideBar";
 import { BrowserRouter } from "react-router-dom";
+import { GridLayout, AppLayout } from "./AppStyles";
+
 function App() {
   return (
-    <div className="App">
+    <AppLayout className="App">
       <BrowserRouter>
-        <Appbar />
-        <SideBar />
+      <GridLayout>
+        <Appbar className="header" />
+        <SideBar className="sidenav" />
+      </GridLayout>
       </BrowserRouter>
-    </div>
+    </AppLayout>
   );
 }
 
