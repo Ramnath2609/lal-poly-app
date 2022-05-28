@@ -3,15 +3,15 @@ import styled from "styled-components";
 import Kodikkal from "../icons/Kodikkal/kodikkal.jpg"
 
 const Wrapper = styled.div`
-  margin-left: 190px;
-  margin-top: 10%;
   font-family: RobotoMedium;
   font-size: 18px;
+  overflow: auto;
 `;
 
 const HomeContent = styled.div`
-  width: 95%;
-  margin: auto;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
 `;
 
 const FlexContainer = styled.div`

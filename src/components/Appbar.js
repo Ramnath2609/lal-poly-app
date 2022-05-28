@@ -77,7 +77,6 @@ const StyledLink = styled(Link)`
 
   &:hover {
     transform: translateY(-5px);
-    background: rgba(0,0,0,0) linear-gradient(to right,#00c9fd 0%,#81ee8e 100%) repeat scroll 0 0;    
     transition: all 0.3s ease 0s;
 
     ::before {
@@ -140,7 +139,6 @@ const DropDown = styled.div`
 
   &:hover ${DropDownButton} {
     transform: translateY(-5px);
-    background: rgba(0,0,0,0) linear-gradient(to right,#00c9fd 0%,#81ee8e 100%) repeat scroll 0 0;    
     transition: all 0.3s ease 0s;
   }
 `;
