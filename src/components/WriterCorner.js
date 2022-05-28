@@ -1,26 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div.attrs({
+const ComingSoonText = styled.div.attrs({
     className: String('lal-WriterCorner')
 })`
-  margin-left: 190px;
-  margin-top: 12%;
   display: flex;
   align-items: center;
-  height: 400px;
   justify-content: center;
-  font-size: 18px;
-  font-family: RobotoBold;
+  font-size: 60px;
+  font-family: Roboto;
   font-weight: 600;
   color: #0077D9;
 `;
 
 const WriterCorner = () => {
     return (
-        <Wrapper>
-           Coming Soon...
-        </Wrapper>
+        <div>
+            <ComingSoonText>
+                Coming Soon...
+            </ComingSoonText>
+        </div>
     );
 };
 
