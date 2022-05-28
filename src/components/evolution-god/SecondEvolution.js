@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { Wrapper } from "./styles";
 
 const HomeContent = styled.div`
-  width: 95%;
-  margin: auto;
+  width: 100%;
 `;
 
 const SecondEvolution = () => {

@@ -39,7 +39,7 @@ const Fiction = () => {
                 <img src={Final} alt="logo" style={{ width: "65%" }} />
             </Anchor>
 
-            <Anchor href="https://lal-poly.s3.amazonaws.com/Final+Solution+AMAZON+NOVEL+1.pdf" target="_blank" rel="Final Solution" title="Final Solution">
+            <Anchor href="https://lal-poly.s3.amazonaws.com/FINAL+SOLUTION+REVISED.docx" target="_blank" rel="Final Solution" title="Final Solution">
                 <img src={fINAL} alt="logo" style={{ width: "65%" }} />
             </Anchor>
         </Wrapper>
