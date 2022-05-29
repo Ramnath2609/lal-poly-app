@@ -1,7 +1,7 @@
 import React from "react";
 import ReactGA from 'react-ga';
-import Appbar from "./components/Appbar";
-import SideBar from "./components/SideBar";
+import { Appbar } from "./components/AppBar";
+import { SideBar } from "./components/SideBar";
 import { BrowserRouter } from "react-router-dom";
 import { GridLayout, AppLayout } from "./AppStyles";
 
