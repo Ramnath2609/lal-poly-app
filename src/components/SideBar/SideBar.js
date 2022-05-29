@@ -22,10 +22,10 @@ export const SideBar = () => {
               <StyledLink>Events</StyledLink>
             </LinkHolder>
             <DropDownContent>
-              <Anchor href="#" target="_blank" rel="Politics">Politics</Anchor>
-              <Anchor href="#" target="_blank" rel="History">History</Anchor>
-              <Anchor href="#" target="_blank" rel="Economics">Economics</Anchor>
-              <Anchor href="#" target="_blank" rel="Science">Science</Anchor>
+              <Anchor href="#" rel="Politics">Politics</Anchor>
+              <Anchor href="#" rel="History">History</Anchor>
+              <Anchor href="#" rel="Economics">Economics</Anchor>
+              <Anchor href="#" rel="Science">Science</Anchor>
             </DropDownContent>
           </DropDown>
 
@@ -34,10 +34,10 @@ export const SideBar = () => {
               <StyledLink>Personalities</StyledLink>
             </LinkHolder>
             <DropDownContent>
-              <Anchor href="#" target="_blank" rel="History">History</Anchor>
-              <Anchor href="#" target="_blank" rel="Religion">Religion</Anchor>
-              <Anchor href="#" target="_blank" rel="Economics">Economics</Anchor>
-              <Anchor href="#" target="_blank" rel="Literature">Literature</Anchor>
+              <Anchor href="#" rel="History">History</Anchor>
+              <Anchor href="#" rel="Religion">Religion</Anchor>
+              <Anchor href="#" rel="Economics">Economics</Anchor>
+              <Anchor href="#" rel="Literature">Literature</Anchor>
             </DropDownContent>
           </DropDown>
 
