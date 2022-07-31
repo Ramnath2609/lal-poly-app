@@ -24,7 +24,7 @@ export const Appbar = () => {
         <NavLinks>
           <StyledLink to="/">Home</StyledLink>
 
-          <DropDown>
+          {/* <DropDown>
             <DropDownButton>
               Short Stories
               <DownIcon src={Icon} />
@@ -38,7 +38,7 @@ export const Appbar = () => {
               <Anchor href="https://lal-poly.s3.amazonaws.com/Why+Jesus+was+born.docx" target="_blank" rel="Why Jesus was born?">Why Jesus was born?</Anchor>
               <Anchor href="https://lal-poly.s3.amazonaws.com/The+Funeral.pdf" target="_blank" rel="The Funeral">The Funeral</Anchor>
             </DropDownContent>
-          </DropDown>
+          </DropDown> */}
 
           <DropDown>
             <DropDownButton>
